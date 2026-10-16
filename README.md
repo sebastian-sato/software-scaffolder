@@ -1,7 +1,7 @@
 # basic-software-agent
 Basic implementation of an LLM client that can scaffold simple software projects.
 
-I wanted to try implementing something like those "agentic" software development tools. Compared to those, the capabilities of this are pretty limited, since it runs in a single step rather than a closed loop. I mostly wrote this as a proof of concept, since it isn't really practically useful, but if for some reason you wanted to insert your own LLM pipeline without using my specific server implementation, you'd just need to replace the code in the generate function within llm_client.py, and maybe also update the prompt format specified in construct_prompt.py
+I wanted to try implementing something like those "agentic" software development tools. Compared to those, the capabilities of this are pretty limited, since it runs in a single step rather than a closed loop. I mostly wrote this as a proof of concept. If you wanted to insert your own LLM pipeline without using my specific server implementation, you'd just need to replace the code in the generate function within llm_client.py, and maybe also update the prompt format specified in construct_prompt.py
 
 # Usage:
 This doesn't contain code for actually running the LLM, just a client for connecting to an HTTP server running one, using the same format as my "Distributed LLM Server" project.
